@@ -1,6 +1,6 @@
 #!/bin/sh
-if [ -f "/home/aitac/.aitac-init-done"]; then
+if [ -e "/home/aitac/.aitac-init-done" ]; then
 	exit 0
 fi
-rm -r /home/aitac/*
+rm -rf /home/aitac/*
 touch /home/aitac/.aitac-init-done
